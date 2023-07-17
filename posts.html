@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="post-style.css">
+  <title>Bejegyzés - NetBy Chat</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="Képek/NetBy Chat Logo.png" alt="NetBy Chat Logo" class="logo">
+      <h1 class="animated-text">NetBy Chat</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profil</a></li>
+          <li><a href="posts.html#">Bejegyzések</a></li>
+          <li><a href="discover.html">Felfedezés</a></li>
+          <li><a href="notification.html">Értesítések</a></li>
+          <li><a href="chat.html">Chat</a></li>
+          <li><a href="about.html">Rólunk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div id="create-post" class="animated-fade">
+      <h2>Új bejegyzés</h2>
+      <form id="post-form">
+        <div class="form-group">
+          <label for="post-subject">Tárgy:</label>
+          <input type="text" id="post-subject" placeholder="Tárgy" required>
+        </div>
+        <div class="form-group">
+          <label for="post-content">Szöveg:</label>
+          <textarea id="post-content" rows="4" placeholder="Írj valamit..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="post-image">Kép csatolása:</label>
+          <input type="file" id="post-image">
+        </div>
+        <div class="form-group">
+          <label for="post-poll">Szavazás (poll):</label>
+          <input type="text" id="poll-option-1" placeholder="Opció 1">
+          <input type="text" id="poll-option-2" placeholder="Opció 2">
+          <button id="add-poll-option">További opció</button>
+        </div>
+        <button id="create-post-btn">Közzététel</button>
+        <button id="share-post-btn">Megosztás</button>
+      </form>
+    </div>
+
+    <div id="posts-container" class="animated-slide">
+      <h2>Bejegyzések</h2>
+    </div>
+  </main>
+
+  <div class="hogyan">
+  <a href="post-instructions.html">Hogyan kell Postot kirakni?</a></div>
+  <br>
+  
+  <footer>
+    NetBy @ 2023 Minden jog fenntartva.
+  </footer>
+
+  <script src="post.js"></script>
+</body>
+</html>

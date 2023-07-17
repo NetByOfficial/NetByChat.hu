@@ -1,0 +1,62 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="profile.css">
+  <title>Profil - NetBy Chat</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="Képek/NetBy Chat Logo.png" alt="NetBy Chat Logo" class="logo">
+      <h1 class="animated-text">NetBy Chat</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html#">Profil</a></li>
+          <li><a href="posts.html">Bejegyzések</a></li>
+          <li><a href="discover.html">Felfedezés</a></li>
+          <li><a href="notification.html">Értesítések</a></li>
+          <li><a href="chat.html">Chat</a></li>
+          <li><a href="about.html">Rólunk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="profile" class="animated-fade">
+      <h2>Profil</h2>
+      <div class="profile-info">
+        <div class="container">
+          <img src="profilkép/default-profil.png" id="profil_kep" alt="Profil kép" onclick="mouseEnter_profilkepszerkesztes()" ondblclick="mouseLeave_profilkepszerkesztes()" height="120x" width="120">
+          <div class="BTN_profilkepszerkesztese">
+          <input title="Válaszd ki a képet" type="file" name="file" id="file" accept="image/png, image/jpeg">
+          <button onclick="uploadimg()">Kép feltöltése</button></div>
+          <h1 id="name">Fejlesztés alatt!</h1>
+        <h3 id="username">Felhasználónév</h3>
+        <p>Követők: <span id="followers">0</span></p>
+        <p>Követések: <span id="following">0</span></p>
+        <p>Bejegyzések: <span id="posts">0</span></p>
+        <p>Likeok: <span id="likes">0</span></p>
+        <p>Státusz: <span id="status-indicator" class="status-indicator"></span></p>
+        <button class="status-button" data-status="active">Online</button>
+        <button class="status-button" data-status="away">Távol</button>
+        <button class="status-button" data-status="offline">Offline</button>
+      </div><br>
+      <div class="post-container">
+        <button id="create-post-btn">+</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    NetBy @ 2023 Minden jog fenntartva.
+  </footer>
+
+  <script src="profile.js"></script>
+  <script src="p_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* profile.css */
+body {
+  background-color: #F6F8FA;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #1C2938;
+}
+
+header {
+  background-color: #1DA1F2;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.animated-text {
+  animation: fade-in 1s ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1776C2;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#profile {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #1C2938;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #1DA1F2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.status-button:hover {
+  background-color: #1776C2;
+}
+
+footer {
+  background-color: #1DA1F2;
+  padding: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.BTN_profilkepszerkesztese{
+  display: none;
+  float: center;
+  text-align: center;
+  transition: all 0.3s;
+}
+img{
+  border-radius: 60px;
+}

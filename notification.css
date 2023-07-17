@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F8FA;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  #notification-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notification-item {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .notification-item .notification-content {
+    margin-bottom: 5px;
+    color: #1C2938;
+  }
+  
+  .notification-item .notification-timestamp {
+    font-size: 12px;
+    color: #657786;
+  }
+  
+  /* Animációk */
+  .animated-fade {
+    animation: fade-in 1s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

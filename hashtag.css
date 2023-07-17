@@ -1,0 +1,146 @@
+/* hashtag.css */
+
+body {
+    background-color: #F6F8FA;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #1C2938;
+  }
+  
+  header {
+    background-color: #1DA1F2;
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+  
+  .animated-text {
+    animation: fade-in 1s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #1776C2;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #1C2938;
+    margin-bottom: 10px;
+  }
+  
+  .kereso {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #search-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #1C2938;
+    margin-right: 10px;
+  }
+  
+  #search-button {
+    padding: 8px 16px;
+    background-color: #1DA1F2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-button:hover {
+    background-color: #1776C2;
+  }
+  
+  .hashtag-list {
+    margin-top: 30px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #1C2938;
+    margin-bottom: 10px;
+  }
+  
+  .hashtag-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hashtag-list ul li {
+    margin-bottom: 10px;
+  }
+  
+  .hashtag-list ul li a {
+    color: #1DA1F2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .hashtag-list ul li a:hover {
+    color: #1776C2;
+  }
+  
