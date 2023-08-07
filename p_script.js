@@ -47,6 +47,13 @@
           profil_img.src = savedProfilImg;
         }
       }
+      function deleteprofile(){
+        localStorage.removeItem('profil_kep');
+        localStorage.removeItem("username")
+        localStorage.removeItem("users")
+        alert('Fiók Eltávolítva');
+        window.location.href = "bejelentkezés/index.html";
+      }
       
     
       
